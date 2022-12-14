@@ -25,7 +25,7 @@ I have not copied the code from a student or any source.\n
 I have not given my code to any student.\n
 """
 
-FILEPATH = ".\\"
+FILEPATH = "finalproject\\"
 FILENAME = "volcanoes.csv"
 FILE_CITIES = "worldcities.csv"
 
@@ -106,10 +106,10 @@ st.markdown("This app analyzes volcanic eruption data throughout the world.")
 
 # sidebar
 st.sidebar.title("View Code")
-st.sidebar.image("fortnite-volcano.gif")
+st.sidebar.image(FILEPATH + "fortnite-volcano.gif")
 st.sidebar.write("Here's where you can choose to see the code running this application")
 
-st.image("volcano-scaled.jpg", caption="The Cumbre Vieja Volcano")
+st.image(FILEPATH + "volcano-scaled.jpg", caption="The Cumbre Vieja Volcano")
 
 # Volcano list and map variable selection
 list_options = st.selectbox("Select what portion of the data you'd like to view:", ["Raw Data", "Country", "Primary Volcano Type", "Dominant Rock Type", "Tectonic Setting"])
@@ -371,4 +371,4 @@ st.pyplot(piechart(city_prox_vol_index_df, explode=(0, 0, 0, 0, 0.1)))
 
 st.header("The End")
 st.success("You've reached the end! Thank you for looking through my application!")
-st.image("lalo-wink.gif")
+st.image(FILEPATH + "lalo-wink.gif")
