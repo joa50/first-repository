@@ -25,7 +25,7 @@ I have not copied the code from a student or any source.\n
 I have not given my code to any student.\n
 """
 
-FILEPATH = "joa50\/first-repository\/main\/finalproject\\"
+FILEPATH = "joa50/first-repository/main/finalproject\\"
 FILENAME = "volcanoes.csv"
 FILE_CITIES = "worldcities.csv"
 
