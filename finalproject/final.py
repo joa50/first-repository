@@ -25,14 +25,15 @@ I have not copied the code from a student or any source.\n
 I have not given my code to any student.\n
 """
 
+FILEPATH = ".\\"
 FILENAME = "volcanoes.csv"
 FILE_CITIES = "worldcities.csv"
 
-volcano = pd.read_csv((".\\" + FILENAME), encoding="ISO-8859-1")
+volcano = pd.read_csv(FILEPATH + FILENAME, encoding="ISO-8859-1")
 volcano = volcano.fillna("No Data (unchecked)")
 volcano = volcano.replace("Uncertain Evidence", "Evidence Uncertain")
 
-cities = pd.read_csv(".\\" + FILE_CITIES)
+cities = pd.read_csv(FILEPATH + FILE_CITIES)
 
 
 # Haversine formula, finds the distance between two points on a globe
